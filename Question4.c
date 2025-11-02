@@ -19,6 +19,7 @@ int main() {
     printf("Press 0 to exit");
     scanf(" %d", &choice);
 
+    while (1) {
     switch (choice) {
     case 1:
         top = push(stack,top, max);
@@ -38,6 +39,7 @@ int main() {
     default:
         printf("Invalid choice - Retry !");
         break;
+    }
     }
 }
 
