@@ -16,6 +16,7 @@ int main() {
     printf("Press 2 to POP data from the stack \n");
     printf("Press 3 to PEEK to the top-most element of the stack \n");
     printf("Press 4 to DISPLAY all the elements of the stack \n");
+    printf("Press 0 to exit");
     scanf(" %d", &choice);
 
     switch (choice) {
@@ -32,6 +33,8 @@ int main() {
     case 4:
         display(stack,top, max);
         break;
+    case 0:
+        return 0;
     default:
         printf("Invalid choice - Retry !");
         break;
